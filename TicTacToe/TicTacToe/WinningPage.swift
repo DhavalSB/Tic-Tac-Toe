@@ -11,8 +11,12 @@ struct WinningPage: View {
     
     @StateObject var viewRouter: ViewRouter
 
+    var winningPlayer: String {
+        if turn == "x" {return "x"} else {return "o"}
+    }
     
     var body: some View {
+        
         
     VStack {
         if Draw {

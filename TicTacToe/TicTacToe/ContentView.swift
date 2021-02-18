@@ -172,9 +172,10 @@ struct ContentView: View {
                                         if gameIsOver {
                                             viewRouter.currentPage = .page3
                                         }
-                                    } else if turn == "o" {
-                                        board[0] = "o"
+                                    }
+                                    else if turn == "o" {
                                         opacity[1] = 1
+                                        board[0] = "o"
                                         print(board)
                                         print(gameIsOver)
                                         print(playerHasWon())
@@ -182,8 +183,8 @@ struct ContentView: View {
                                             viewRouter.currentPage = .page3
                                         }
                                     }
-                                    changeTurn()
-
+                                    
+                                    if !gameIsOver {changeTurn()}
                                 }
                                 print(board[0])
                                 }) {
@@ -207,7 +208,8 @@ struct ContentView: View {
                                         if gameIsOver {
                                             viewRouter.currentPage = .page3
                                         }
-                                    } else if turn == "o" {
+                                    }
+                                    else if turn == "o" {
                                         board[1] = "o"
                                         opacity[3] = 1
                                         print(board)
@@ -217,7 +219,7 @@ struct ContentView: View {
                                             viewRouter.currentPage = .page3
                                         }
                                     }
-                                    changeTurn()
+                                    if !gameIsOver {changeTurn()}
 
                                 }
                                 print(board[1])
@@ -241,7 +243,8 @@ struct ContentView: View {
                                         if gameIsOver {
                                             viewRouter.currentPage = .page3
                                         }
-                                    } else if turn == "o" {
+                                    }
+                                    else if turn == "o" {
                                         board[2] = "o"
                                         opacity[5] = 1
                                         print(board)
@@ -251,7 +254,7 @@ struct ContentView: View {
                                             viewRouter.currentPage = .page3
                                         }
                                     }
-                                    changeTurn()
+                                    if !gameIsOver {changeTurn()}
 
                                 }
                                 print(board[2])
@@ -282,7 +285,8 @@ struct ContentView: View {
                                         if gameIsOver {
                                             viewRouter.currentPage = .page3
                                         }
-                                    } else if turn == "o" {
+                                    }
+                                    else if turn == "o" {
                                         board[3] = "o"
                                         opacity[7] = 1
                                         print(board)
@@ -292,7 +296,7 @@ struct ContentView: View {
                                             viewRouter.currentPage = .page3
                                         }
                                     }
-                                    changeTurn()
+                                    if !gameIsOver {changeTurn()}
 
                                 }
                                 print(board[3])
@@ -317,7 +321,8 @@ struct ContentView: View {
                                         if gameIsOver {
                                             viewRouter.currentPage = .page3
                                         }
-                                    } else if turn == "o" {
+                                    }
+                                    else if turn == "o" {
                                         board[4] = "o"
                                         opacity[9] = 1
                                         print(board)
@@ -327,7 +332,7 @@ struct ContentView: View {
                                             viewRouter.currentPage = .page3
                                         }
                                     }
-                                    changeTurn()
+                                    if !gameIsOver {changeTurn()}
 
                                 }
                                 print(board[4])
@@ -351,7 +356,8 @@ struct ContentView: View {
                                         if gameIsOver {
                                             viewRouter.currentPage = .page3
                                         }
-                                    } else if turn == "o" {
+                                    }
+                                    else if turn == "o" {
                                         board[5] = "o"
                                         opacity[11] = 1
                                         print(board)
@@ -361,7 +367,7 @@ struct ContentView: View {
                                             viewRouter.currentPage = .page3
                                         }
                                     }
-                                    changeTurn()
+                                    if !gameIsOver {changeTurn()}
 
                                 }
                                 print(board[5])
@@ -392,7 +398,8 @@ struct ContentView: View {
                                         if gameIsOver {
                                             viewRouter.currentPage = .page3
                                         }
-                                    } else if turn == "o" {
+                                    }
+                                    else if turn == "o" {
                                         board[6] = "o"
                                         opacity[13] = 1
                                         print(board)
@@ -402,7 +409,7 @@ struct ContentView: View {
                                             viewRouter.currentPage = .page3
                                         }
                                     }
-                                    changeTurn()
+                                    if !gameIsOver {changeTurn()}
 
                                 }
                                 print(board[6])
@@ -427,7 +434,8 @@ struct ContentView: View {
                                         if gameIsOver {
                                             viewRouter.currentPage = .page3
                                         }
-                                    } else if turn == "o" {
+                                    }
+                                    else if turn == "o" {
                                         board[7] = "o"
                                         opacity[15] = 1
                                         print(board)
@@ -437,7 +445,7 @@ struct ContentView: View {
                                             viewRouter.currentPage = .page3
                                         }
                                     }
-                                    changeTurn()
+                                    if !gameIsOver {changeTurn()}
 
                                 }
                                 print(board[7])
@@ -460,7 +468,8 @@ struct ContentView: View {
                                         if gameIsOver {
                                             viewRouter.currentPage = .page3
                                         }
-                                    } else if turn == "o" {
+                                    }
+                                    else if turn == "o" {
                                         board[8] = "o"
                                         opacity[17] = 1
                                         print(board)
@@ -470,7 +479,7 @@ struct ContentView: View {
                                             viewRouter.currentPage = .page3
                                         }
                                     }
-                                    changeTurn()
+                                    if !gameIsOver {changeTurn()}
                                 }
                                 print(board[8])
                             }) {
